@@ -1,0 +1,4 @@
+---
+- include: tasks/install.yml
+- include: tasks/brew.yml
+- include: tasks/brewcask.yml

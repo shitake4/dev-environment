@@ -1,0 +1,6 @@
+---
+- command: brew -h
+  register: exit
+
+- command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  when : exit.rc not in [0, 1]

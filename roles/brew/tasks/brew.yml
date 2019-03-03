@@ -1,0 +1,37 @@
+---
+- homebrew:
+    name: "{{ item }}"
+    state: latest
+    update_homebrew: true
+  loop:
+    - autoconf
+    - awscli
+    - docker
+    - docker-compose
+    - gettext
+    - ghq
+    - git
+    - gzip
+    - imagemagick
+    - jq
+    - maven
+    - mecab
+    - mecab-ipadic
+    - ncurses
+    - nkf
+    - nvm
+    - openssl
+    - pcre
+    - pcre2
+    - peco
+    - pkg-config
+    - pyenv
+    - q
+    - rbenv
+    - readline
+    - ruby-build
+    - tig
+    - yarn
+    - zlib
+    - zsh
+    - zsh-completions

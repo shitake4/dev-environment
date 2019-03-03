@@ -1,0 +1,33 @@
+---
+- homebrew_tap:
+    name: homebrew/cask-fonts
+
+- homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    greedy: true
+    update_homebrew: true
+  loop:
+    - 1password
+    - amazon-music
+    - appcleaner
+    - clipy
+    - docker
+    - dropbox
+    - franz
+    - google-chrome
+    - google-japanese-ime
+    - iterm2
+    - java
+    - jetbrains-toolbox
+    - kindle
+    - marp
+    - ricty
+    - skitch
+    - slack
+    - the-unarchiver
+    - vagrant
+    - vagrant-manager
+    - virtualbox
+    - visual-studio-code
+    - wunderlist

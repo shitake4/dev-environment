@@ -1,0 +1,37 @@
+---
+- name: create vim symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/vim/.vimrc"
+    path: "/Users/{{ ansible_env.USER }}/.vimrc"
+    state: link
+
+- name: create vim directory symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/vim/.vim"
+    path: "/Users/{{ ansible_env.USER }}/.vim"
+    state: link
+
+- name: create zsh symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/zsh/.zshrc"
+    path: "/Users/{{ ansible_env.USER }}/.zshrc"
+    state: link
+
+- name: create .zsh directory symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/zsh"
+    path: "/Users/{{ ansible_env.USER }}/.zsh"
+    state: link
+
+- name: create .gitignore symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/git/.gitignore"
+    path: "/Users/{{ ansible_env.USER }}/.gitignore"
+    state: link
+
+- name: create .gitconfig symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/git/.gitconfig"
+    path: "/Users/{{ ansible_env.USER }}/.gitconfig"
+    state: link
+
