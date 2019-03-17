@@ -14,6 +14,9 @@ easily setup development environment for mac OS
 $ ansible-playbook localhost.yml
 ```
 
+### Note
+1. Add Apple ID and Password `roles/mas/vars/main.yml`
+
 ### Need login services
 1. 1password
 1. amazon-music
