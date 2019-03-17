@@ -1,0 +1,8 @@
+---
+mas_email: ""
+mas_password: ""
+mas_installed_apps:
+  - { id: 410628904, name: "Wunderlist" }
+
+mas_upgrade_all_apps: no
+mas_signin_dialog: no
