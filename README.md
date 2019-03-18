@@ -14,7 +14,11 @@ easily setup development environment for mac OS
 $ ansible-playbook localhost.yml
 ```
 
-### Note
+## Install
+1. installing dependencies
+    ```sh
+    ansible-galaxy install -r requirements.yml
+    ```
 1. Add Apple ID and Password `roles/mas/vars/main.yml`
 
 ### Need login services
