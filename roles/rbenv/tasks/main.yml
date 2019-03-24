@@ -1,0 +1,9 @@
+---
+- homebrew:
+      name: rbenv
+      state: latest
+      update_homebrew: true
+
+- git:
+      dest: "/Users/{{ ansible_env.USER }}/.rbenv/plugins/rbenv-each"
+      repo: https://github.com/rbenv/rbenv-each.git

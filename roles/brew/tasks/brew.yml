@@ -27,7 +27,6 @@
     - pkg-config
     - pyenv
     - q
-    - rbenv
     - readline
     - ruby-build
     - tig
