@@ -1,0 +1,5 @@
+---
+- name: Automatically hide or show the Dock
+  command: defaults write com.apple.dock autohide -bool true
+#  loop:
+#    - {name: '', command: ''}
