@@ -1,5 +1,28 @@
 ---
-- name: Automatically hide or show the Dock
-  command: defaults write com.apple.dock autohide -bool true
-#  loop:
-#    - {name: '', command: ''}
+- name: finder settings
+  command: "defaults write com.apple.finder {{ item.key }} {{ item.value }}"
+  with_dict:
+    - _FXShowPosixPathInTitle: "{{ _FXShowPosixPathInTitle }}"
+    - _FXSortFoldersFirst: "{{ _FXSortFoldersFirst }}"
+    - AnimateWindowZoom: "{{ AnimateWindowZoom }}"
+    - AppleShowAllFiles: "{{ AppleShowAllFiles }}"
+    - AppleShowAllFiles: "{{ AppleShowAllFiles }}"
+    - FXDefaultSearchScope: "{{ FXDefaultSearchScope }}"
+    - FXEnableExtensionChangeWarning: "{{ FXEnableExtensionChangeWarning }}"
+    - FXPreferredViewStyle: "{{ FXPreferredViewStyle }}"
+    - QLEnableTextSelection: "{{ QLEnableTextSelection }}"
+    - QuitMenuItem: "{{ QuitMenuItem }}"
+    - ShowPathbar: "{{ ShowPathbar }}"
+    - ShowStatusBar: "{{ ShowStatusBar }}"
+    - ShowTabView: "{{ ShowTabView }}"
+    - WarnOnEmptyTrash: "{{ WarnOnEmptyTrash }}"
+
+- name: dock settings
+  command: "defaults write com.apple.dock {{ item.key }} {{ item.value }}"
+  with_dict:
+    - autohide-delay: "{{ autohide-delay }}"
+    - largesize: "{{ largesize }}"
+    - magnification: "{{ magnification }}"
+    - mcx-expose-disabled: "{{ mcx-expose-disabled }}"
+    - tilesize: "{{ tilesize }}"
+    - wvous-tl-corner: "{{ wvous-tl-corner }}"
