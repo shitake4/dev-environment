@@ -32,6 +32,7 @@
     - ruby-build
     - tig
     - yarn
+    - yarn-completion
     - zlib
     - zsh
     - zsh-completions
