@@ -1,0 +1,5 @@
+---
+- name: Add yarn packages to global
+  command: "yarn global add {{ item }}"
+  loop:
+    - gatsby
