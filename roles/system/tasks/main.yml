@@ -39,3 +39,14 @@
     - SuppressSearchSuggestions: "{{ SuppressSearchSuggestions }}"
     - UniversalSearchEnabled: "{{ UniversalSearchEnabled }}"
     - WebKitDeveloperExtrasEnabledPreferenceKey: "{{ WebKitDeveloperExtrasEnabledPreferenceKey }}"
+
+- name: screen capture settings
+  command: "defaults write com.apple.screencapture {{ item.key }} {{ item.value }}"
+  with_dict:
+    - disable-shadow: "{{ disable-shadow }}"
+    - type: "{{ type }}"
+
+- name: terminal settings
+  command: "defaults write com.apple.terminal {{ item.key }} {{ item.value }}"
+  with_dict:
+    - StringEncodings: "{{ StringEncodings }}"

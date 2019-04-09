@@ -33,3 +33,10 @@ SafariShowStatusBar: "-bool true"             # ステータスバーを表示�
 SuppressSearchSuggestions: "-bool true"       # 検索クエリを Apple へ送信しない
 UniversalSearchEnabled: "-bool false"         # 検索クエリを Apple へ送信しない
 WebKitDeveloperExtrasEnabledPreferenceKey: "-bool true" # Safari の開発・デバッグメニューを有効にする
+
+# capture
+disable-shadow: "-bool true"                  # スクリーンキャプチャの影をなくす
+type: "-string 'png'"                         # スクリーンショットの保存形式を PNG にする
+
+# terminal
+StringEncodings: "-array 4"                   # UTF-8 のみを使用する
