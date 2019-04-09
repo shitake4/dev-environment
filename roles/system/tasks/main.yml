@@ -50,3 +50,15 @@
   command: "defaults write com.apple.terminal {{ item.key }} {{ item.value }}"
   with_dict:
     - StringEncodings: "{{ StringEncodings }}"
+
+- name: NSGlobalDomain settings
+  command: "defaults write NSGlobalDomain {{ item.key }} {{ item.value }}"
+  with_dict:
+    - AppleShowAllExtensions: "{{ AppleShowAllExtensions }}"
+    - AppleShowScrollBars: "{{ AppleShowScrollBars }}"
+    - com.apple.springing.delay: "{{ com.apple.springing.delay }}"
+    - com.apple.springing.enabled: "{{ com.apple.springing.enabled }}"
+    - InitialKeyRepeat: "{{ InitialKeyRepeat }}"
+    - KeyRepeat: "{{ KeyRepeat }}"
+    - NSWindowResizeTime: "{{ NSWindowResizeTime }}"
+    - WebKitDeveloperExtras: "{{ WebKitDeveloperExtras }}"

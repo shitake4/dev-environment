@@ -40,3 +40,13 @@ type: "-string 'png'"                         # スクリーンショットの�
 
 # terminal
 StringEncodings: "-array 4"                   # UTF-8 のみを使用する
+
+# NSGlobalDomain
+AppleShowAllExtensions: "-bool true"          # 全ての拡張子のファイルを表示する
+AppleShowScrollBars: "-string 'Always'"       # スクロールバーを常時表示する
+com.apple.springing.delay: "-float 0"         # スプリングロード遅延を除去する
+com.apple.springing.enabled: "-bool true"     # ディレクトリのスプリングロードを有効にする
+InitialKeyRepeat: "-int 15"                   # キーリピート開始までのタイミング
+KeyRepeat: "-int 2"                           # キーリピートの速度
+NSWindowResizeTime: "-float 0.001"            # コンソールアプリケーションの画面サイズ変更を高速にする
+WebKitDeveloperExtras: "-bool true"           # Safari のコンテキストメニューに Web インスペクタを追加する
