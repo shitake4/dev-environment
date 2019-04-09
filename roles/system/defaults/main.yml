@@ -1,4 +1,5 @@
 ---
+# Finder
 _FXShowPosixPathInTitle: "-bool true"         # Finder のタイトルバーにフルパスを表示する
 _FXSortFoldersFirst: "-bool true"             # 名前で並べ替えを選択時にディレクトリを前に置くようにする
 AnimateWindowZoom: "-bool true"               # フォルダを開くときのアニメーションを無効にする
@@ -9,10 +10,11 @@ FXPreferredViewStyle: "Nlsv"                  # 常にリストビューにす�
 QLEnableTextSelection: "-bool true"           # クイックルックでテキストを選択可能にする
 QuitMenuItem: "-bool true"                    # Finder を終了させる項目を追加する
 ShowPathbar: "-bool true"                     # パスバーを表示する
-ShowStatusBar: "-bool true"                   # ステータスバーを表示する
+FinderShowStatusBar: "-bool true"             # ステータスバーを表示する
 ShowTabView: "-bool true"                     # タブバーを表示する
 WarnOnEmptyTrash: "-bool false"               # ゴミ箱を空にする前の警告を無効化する
 
+# dock
 autohide-delay: "-float 0"                    # Dock が表示されるまでの待ち時間を無効にする
 largesize: "-int 100"                         # Dock の拡大時のサイズを指定する
 magnification: "-bool true"                   # Dock の拡大を有効にする
@@ -20,3 +22,14 @@ mcx-expose-disabled: "-bool true"             # Mission Control を使用不可�
 #persistent-apps -array                       # Dock の Finder とゴミ箱以外を消す・普段は無効にしておく
 tilesize: "-int 45"                           # Dock の通常サイズを指定する
 wvous-tl-corner: "-int 10"                    # ディスプレイ左上でディスプレイをスリープする
+
+# safari
+AutoOpenSafeDownloads: "-bool false"          # ファイルのダウンロード後に自動でファイルを開くのを無効化する
+WebKit2DeveloperExtrasEnabled: "-bool true"   # Safari の開発・デバッグメニューを有効にする
+IncludeDevelopMenu: "-bool true"              # Safari の開発・デバッグメニューを有効にする
+IncludeInternalDebugMenu: "-bool true"        # Safari の開発・デバッグメニューを有効にする
+ShowFullURLInSmartSearchField: "-bool true"   # アドレスバーに完全な URL を表示する
+SafariShowStatusBar: "-bool true"             # ステータスバーを表示する
+SuppressSearchSuggestions: "-bool true"       # 検索クエリを Apple へ送信しない
+UniversalSearchEnabled: "-bool false"         # 検索クエリを Apple へ送信しない
+WebKitDeveloperExtrasEnabledPreferenceKey: "-bool true" # Safari の開発・デバッグメニューを有効にする

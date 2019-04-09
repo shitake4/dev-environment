@@ -13,7 +13,7 @@
     - QLEnableTextSelection: "{{ QLEnableTextSelection }}"
     - QuitMenuItem: "{{ QuitMenuItem }}"
     - ShowPathbar: "{{ ShowPathbar }}"
-    - ShowStatusBar: "{{ ShowStatusBar }}"
+    - ShowStatusBar: "{{ FinderShowStatusBar }}"
     - ShowTabView: "{{ ShowTabView }}"
     - WarnOnEmptyTrash: "{{ WarnOnEmptyTrash }}"
 
@@ -26,3 +26,16 @@
     - mcx-expose-disabled: "{{ mcx-expose-disabled }}"
     - tilesize: "{{ tilesize }}"
     - wvous-tl-corner: "{{ wvous-tl-corner }}"
+
+- name: safari settings
+  command: "defaults write com.apple.Safari {{ item.key }} {{ item.value }}"
+  with_dict:
+    - AutoOpenSafeDownloads: "{{ AutoOpenSafeDownloads }}"
+    - com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled: "{{ WebKit2DeveloperExtrasEnabled }}"
+    - IncludeDevelopMenu: "{{ IncludeDevelopMenu }}"
+    - IncludeInternalDebugMenu: "{{ IncludeInternalDebugMenu }}"
+    - ShowFullURLInSmartSearchField: "{{ ShowFullURLInSmartSearchField }}"
+    - ShowStatusBar: "{{ SafariShowStatusBar }}"
+    - SuppressSearchSuggestions: "{{ SuppressSearchSuggestions }}"
+    - UniversalSearchEnabled: "{{ UniversalSearchEnabled }}"
+    - WebKitDeveloperExtrasEnabledPreferenceKey: "{{ WebKitDeveloperExtrasEnabledPreferenceKey }}"
