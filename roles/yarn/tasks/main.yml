@@ -3,3 +3,4 @@
   command: "yarn global add {{ item }}"
   loop:
     - gatsby
+    - textlint
