@@ -35,3 +35,10 @@
     path: "/Users/{{ ansible_env.USER }}/.gitconfig"
     state: link
 
+- name: create google JapaneseInput directory symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/JapaneseInput"
+    path: "/Users/{{ ansible_env.USER }}/Library/ApplicationSupport/Google/JapaneseInput"
+    force: yes
+    state: link
+
