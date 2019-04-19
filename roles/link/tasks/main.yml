@@ -35,10 +35,21 @@
     path: "/Users/{{ ansible_env.USER }}/.gitconfig"
     state: link
 
+- name: gather Google JapanseInput directory
+  stat:
+    path: "/Users/{{ ansible_env.USER }}/Library/ApplicationSupport/Google/JapaneseInput"
+  register: japanese_input
+
+- name: if google JapaneseInput directory present, delete it
+  file:
+    path: "/Users/{{ ansible_env.USER }}/Library/ApplicationSupport/Google/JapaneseInput"
+    force: yes
+    state: absent
+  when: japanese_input.stat.isdir is defined and japanese_input.stat.islnk == False
+
 - name: create google JapaneseInput directory symbolic link
   file:
     src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/JapaneseInput"
     path: "/Users/{{ ansible_env.USER }}/Library/ApplicationSupport/Google/JapaneseInput"
     force: yes
     state: link
-
