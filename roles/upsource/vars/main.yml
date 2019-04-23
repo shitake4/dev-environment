@@ -1,0 +1,6 @@
+---
+upsource_fresh_install: true
+# Installation directory
+upsource_install_dir: "/Users/{{ ansible_env.USER }}/Applications/upsource"
+# Installation port
+upsource_port: 3000
