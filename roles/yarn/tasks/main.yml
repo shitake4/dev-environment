@@ -3,4 +3,5 @@
   command: "yarn global add {{ item }}"
   loop:
     - gatsby
-    - textlint
+
+- include: tasks/textlint.yml

@@ -1,0 +1,17 @@
+---
+- name: Add textlint to global
+  command: yarn global add textlint
+
+- name: Add textlint packages to global
+  command: "yarn global add {{ item }}"
+  loop:
+    - textlint-rule-preset-japanese
+    - textlint-rule-preset-ja-technical-writing
+    - textlint-rule-prh
+    - textlint-rule-spellcheck-tech-word
+
+- name: create .textlintrc symbolic link
+  file:
+    src: "/Users/{{ ansible_env.USER }}/Dropbox/settings/textlint/.textlintrc"
+    path: "/Users/{{ ansible_env.USER }}/.textlintrc"
+    state: link
