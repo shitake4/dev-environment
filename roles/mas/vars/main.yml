@@ -4,6 +4,7 @@ mas_password: ""
 mas_installed_apps:
   - { id: 410628904, name: "Wunderlist" }
   - { id: 771955779, name: "Gifted" }
+  - { id: 957734279, name: "Toggl Desktop" }
 
 mas_upgrade_all_apps: no
 mas_signin_dialog: no
