@@ -2,11 +2,13 @@
 - homebrew_tap:
     name: homebrew/cask-fonts
 
-- homebrew_cask:
+- name: install brew cask packages
+  homebrew_cask:
     name: "{{ item }}"
-    state: present
+    state: upgraded
     greedy: true
     update_homebrew: true
+    accept_external_apps: true
   loop:
     - 1password
     - amazon-music
@@ -23,15 +25,27 @@
     - java
     - jetbrains-toolbox
     - kindle
-    - marp
+    - miro-formerly-realtimeboard
     - ngrok
-    - notion
     - ricty
     - slack
-    - teensy
     - the-unarchiver
+    - toggl
+    - virtualbox
+    - zoom
+
+- name: remove brew cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: absent
+    greedy: true
+    update_homebrew: true
+    accept_external_apps: true
+  loop:
+    - marp
+    - notion
+    - teensy
     - vagrant
     - vagrant-manager
-    - virtualbox
     - visual-studio-code
     - wunderlist

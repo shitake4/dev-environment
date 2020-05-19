@@ -5,7 +5,6 @@
     update_homebrew: true
   loop:
     - autoconf
-    - awscli
     - docker
     - docker-compose
     - gettext
@@ -36,3 +35,11 @@
     - zlib
     - zsh
     - zsh-completions
+
+- name: remove unuse packages
+  homebrew:
+    name: "{{ item }}"
+    state: absent
+    update_homebrew: true
+  loop:
+    - awscli

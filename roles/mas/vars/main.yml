@@ -2,7 +2,7 @@
 mas_email: ""
 mas_password: ""
 mas_installed_apps:
-  - { id: 410628904, name: "Wunderlist" }
+  - { id: 974929595, name: "Notions" }
   - { id: 771955779, name: "Gifted" }
   - { id: 957734279, name: "Toggl Desktop" }
 
