@@ -2,9 +2,10 @@
 mas_email: ""
 mas_password: ""
 mas_installed_apps:
-  - { id: 974929595, name: "Notions" }
-  - { id: 771955779, name: "Gifted" }
-  - { id: 957734279, name: "Toggl Desktop" }
+  - { name: "Gifted", id: 771955779 }
+  - { name: "Microsoft To-Do", id: 1274495053 }
+  - { name: "Notions", id: 974929595 }
+  - { name: "Toggl Desktop", id: 957734279 }
 
 mas_upgrade_all_apps: no
 mas_signin_dialog: no
