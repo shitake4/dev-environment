@@ -30,6 +30,7 @@
     - readline
     - ruby-build
     - tig
+    - unar
     - yarn
     - yarn-completion
     - zlib
