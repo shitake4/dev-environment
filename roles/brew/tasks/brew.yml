@@ -20,6 +20,7 @@
     - ncurses
     - nkf
     - nvm
+    - obs
     - openssl
     - pcre
     - pcre2
